@@ -1,0 +1,285 @@
+/* global */
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* header */
+header{
+    border:2px solid red;
+   
+}
+.connect{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(11, 194, 179);
+}
+.connect .link{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    
+}
+.connect .contact{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.connect .link a i{
+    padding: 10px;
+}
+.email , .phone {
+    padding: 12px;
+}
+.navbar .item{
+    padding: 0px;
+    margin:15px 23px ;
+    flex-basis: 900px;
+}
+i{
+    color: honeydew;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar div ul{
+    display: flex;
+    list-style: none;
+    padding:23px ;
+}
+.logo img{
+    display: block;
+    margin: 8px;
+    padding: 10px;
+    width: 291px;
+    height: 155px;
+}
+.navbar div ul li a{
+    color: rgb(48, 39, 39);
+    font-size: 20px;
+    padding:23px ;
+    text-decoration: none;
+}
+.navbar .btn {
+    background-color:rgb(11, 194, 179) ;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    margin: 9px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid green;
+    padding: 14px 200px;
+    height: 477px;
+    color: white;
+    position: relative;
+    
+}
+.home-heading{
+    padding: 0px 0px;
+    margin: 0px;
+}
+ #home::before{
+     content: "";
+     position: absolute;
+     top: 0px;
+     left:0px;
+background: url(image/home1.jpg) no-repeat center center/cover;
+height: 505px;
+width: 100%;
+z-index: -1;
+ }
+
+ /* Causes */
+
+ #causes{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border: 2px solid red;
+     height: 635px;
+     overflow: auto;
+     padding: 20px 0px;
+ }
+#causes .causes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#causes .causes .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    overflow: auto;
+}
+#causes .causes-para{
+    font-weight: bold;
+    font-size: 20px;
+}
+#causes .causes .box img{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 160px;
+    width: 19vw;
+}
+#causes .causes-heading span:nth-child(2){
+    color: rgb(11, 194, 179);
+}
+
+#causes .btn {
+    background-color:rgb(11, 194, 179) ;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 9px;
+    padding: 9px;
+    cursor: pointer;
+    
+}
+#causes .causes-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#volunteers .volunteers .box img{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 160px;
+    width: 19vw;
+}
+#volunteers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+line-height: 5px;
+padding: 25px;
+}
+#volunteers .volunteers-para p{
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+color: rgb(86, 65, 65);
+}
+#volunteers .volunteers-para1 p{
+text-align: center;
+font-weight: bold;
+color: rgb(86, 65, 65);
+}
+#volunteers .volunteers{
+    display: flex;
+}
+#volunteers .volunteers .box{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    justify-content: center;
+    align-items:center;
+}
+#volunteers .volunteers-heading span:nth-child(2){
+    color: rgb(11, 194, 179);
+}
+/* testimonials */
+
+#testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    color: white;
+    line-height: 60px;
+}
+#testimonials img{
+width: 110px;
+height: 110px;
+border-radius: 110px;
+}
+#testimonials::before{
+    content: "";
+    background: url(image/testimonial-3.jpg) no-repeat center center/cover;
+    height:500px ;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.9;
+}
+#testimonials .testimonials-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+#testimonials .testimonials-para p{
+    font-size: 15px;
+    line-height: 0px;
+}
+
+footer i{
+color: red;
+}
+footer{
+    color: white;
+    z-index: -1;
+}
+footer .footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+   opacity: 0.92;
+    
+}
+footer .footer-box .box{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 10px 12px;
+    justify-content: center;
+    border: 2px solid red;
+}
+footer .footer-box .box .footer-heading::after{
+    width: 10px;
+    height: 3px;
+    display: block;
+    background:rgb(168, 12, 12) ;
+    
+}
+
+
+footer .footer-para{
+    
+    padding: 10px;
+    color: white;
+    display: block; 
+    background: #000; 
+}
+
+footer .footer-para p{
+    text-align: center;
+}
