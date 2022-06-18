@@ -2,6 +2,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
     box-sizing: border-box;
 }
 /* header */
@@ -99,10 +100,17 @@ i{
     flex-direction: column;
     justify-content: center;
     /* border: 2px solid green; */
-    padding: 14px 200px;
+   padding: 10px 200px;
     height: 75vh;
     color: white;
     position: relative;
+    
+}
+.btn{
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
     
 }
 .home-heading{
@@ -120,9 +128,9 @@ width: 100%;
 z-index: -1;
  }
 
- /* Causes */
+ /* *************Causes**************************** */
 
- #causes{
+ #causes{width: 100vw;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -168,7 +176,7 @@ z-index: -1;
 }
 #causes .causes-para{
     font-size: 20px;
-    height: 0%;
+    height: 3%;
     color: grey;
 }
 #causes .causes .box img{
@@ -258,16 +266,16 @@ color: rgb(86, 65, 65);
 #testimonials{
     display: flex;
     flex-direction: column;
-    
+    width: 100vw;
     align-items: center;
     position: relative;
-    height: 60vh;
+    height: 70vh;
     color: white;
     line-height: 60px;
 }
 
 #testimonials h1{
-    height: 25%;
+    height: 15%;
     position: relative;
 }
 #testimonials img{
@@ -290,17 +298,15 @@ border-radius: 100px;
 #testimonials h1::after{
     content: "";
     position: absolute;
-    top: 50%;
-    left: 0%;
+    top: 59%;
+    left:0%;
     width: 100%;
     height: 2.5%;
     background-color: rgb(193, 172, 172);
     display: block;
 }
 #testimonials .testimonials-para{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+ text-align: center;
     align-items: center;
     width: 80%;
     height: 50%;
@@ -308,14 +314,15 @@ border-radius: 100px;
 }
 #testimonials .testimonials-para p{
     font-size: 15px;
-    line-height: 0px;
+    line-height: 1;
 }
 #testimonials .testimonials-para hr {
    width: 100%;
    color: azure;
 }
-
+/* ***********footer************** */
 footer{
+    width: 100vw;
     color: white;
     background-color: #232323;
     height: 70vh;
@@ -386,8 +393,17 @@ padding: 2%;
     display: flex;
     justify-content: center;
     align-items:center ;
-    cursor: pointer;
 }
 footer p span{
     color: red;
 }
+
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+ .review i{
+    color:grey ;
+} 
