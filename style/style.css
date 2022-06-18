@@ -122,7 +122,7 @@ i{
      position: absolute;
      top: 0px;
      left:0px;
-background: url(image/home1.jpg) no-repeat center center/cover;
+background: url(/image/home1.jpg) no-repeat center center/cover;
 height: 100%;
 width: 100%;
 z-index: -1;
@@ -286,7 +286,7 @@ border-radius: 100px;
 }
 #testimonials::before{
     content: "";
-    background: url(image/people-say-bg.jpg) no-repeat center center/cover;
+    background: url(/image/people-say-bg.jpg) no-repeat center center/cover;
     height:100%;
     z-index: -1;
     position: absolute;
@@ -406,4 +406,4 @@ footer p span{
 }
  .review i{
     color:grey ;
-} 
+}
